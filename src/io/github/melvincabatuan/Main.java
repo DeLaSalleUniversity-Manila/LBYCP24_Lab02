@@ -57,7 +57,10 @@ public class Main {
             }
 
             else if (choice == 7){
-
+                WeekDay weekday = new WeekDay();
+                weekday.inputDate();
+                weekday.computeDay();
+                weekday.printDay();
             }
 
             else {

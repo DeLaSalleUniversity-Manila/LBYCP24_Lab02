@@ -19,8 +19,10 @@ public class WeekDay {
 
     public void inputDate(){
         Scanner keyboard = new Scanner(System.in);
+
         System.out.print("Input the day: ");
         day = keyboard.nextInt();
+
         System.out.print("Input the month: ");
         month = keyboard.nextInt();
 
@@ -31,6 +33,7 @@ public class WeekDay {
 
         System.out.print("Input the year: ");
         int temp_year = keyboard.nextInt();
+
         year = ((temp_year/10)%10)*10 + temp_year%10;
         // System.out.println("year = " + year);       // Debug logging
         century = ((temp_year/1000)%10)*10 + (temp_year/100)%10;

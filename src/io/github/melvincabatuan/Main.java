@@ -8,11 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         // Main menu
         for(;;) {
 
-            // Display menu
+            // Display menu and get selection
             getSelection();
 
             if (choice == 1) {
@@ -63,11 +62,19 @@ public class Main {
                 weekday.printDay();
             }
 
-            else {
-                System.out.println("Invalid input! Please try again or Press 99 to exit.");
+            else if (choice == 99){
+                System.out.println("Exiting now...");
+                break;
             }
-        }
-    }
+
+            else {
+                System.out.println("Invalid input! Please try again or Enter 99 to exit.");
+            }
+
+        }// ENDFOR MENU
+
+    }// END MAIN
+
 
     public static void getSelection(){
 
